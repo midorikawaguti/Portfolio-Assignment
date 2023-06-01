@@ -1,16 +1,108 @@
 <%- include ('partials/header.ejs') %>
 <%- include ('partials/main_nav.ejs') %>
    
-
-<main class="container">
-  <div class="jumbotron">
+  <!-- <div class="jumbotron">
     <h1 class="display-4">Welcome to <%= title %> page</h1>
-    </div>
-    </main>
+  </div> -->
+
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  /* background-color: #cafcc5; */
+  color: #0b2905;
+  padding: 20px;
+  text-align: center;
+  font-family: monospace;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #56bb1c;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+  </style>
+
+  <main class="grid-container">
+    <body>
+      <header>
+        <h1>About Me</h1>
+      </header>
+
+      <div class="text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu libero sed tellus tincidunt aliquet. Phasellus pellentesque viverra enim, sed consequat arcu posuere at.</p>
+      </div>
+
+      
+      <section>
+        <h2>Mission</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu libero sed tellus tincidunt aliquet. Phasellus pellentesque viverra enim, sed consequat arcu posuere at.</p>
+      </section>
     
-    <!--bottom nav-->
-    
-      <!--script section-->
-      <%- include ('partials/bottom_nav.ejs') %>
-      <%- include ('partials/footer.ejs') %>
+
+      <section>
+        <h2>Experience and Education</h2>
+          <table>
+            <tr>
+              <td><h5>Federal University of Sao Paulo</h5><br>Chemical Engineer<br>adasdasdasda</td>
+              <td>2013 - 2020</td>
+            </tr>
+            <tr>
+              <td><h5>Promon Engenharia</h5>Process Engineer</td>
+              <td>2018 - 2022</td>
+            </tr>
+            <tr>
+              <td><h5>Centennial College</h5>Software Engineer Technician</td>
+              <td>2022-2023</td>
+            </tr>
+          </table>
+      
+      </section>
+      
+      <section>
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </section>
+      
+      <section>
+        <h2>Resume</h2>
+      </section>
+
+  </main>
+</body>
+
+<!--script section-->
+<%- include ('partials/bottom_nav.ejs') %>
+<%- include ('partials/footer.ejs') %>
    

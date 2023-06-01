@@ -1,0 +1,162 @@
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+   
+
+<!-- <main class="container"> -->
+  <!-- <div class="jumbotron">
+    <h1 class="display-4">Welcome to <%= title %> page</h1>
+  </div> -->
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  /* background-color: #cafcc5; */
+  color: #0b2905;
+  padding: 20px;
+  text-align: center;
+  font-family: monospace;
+}
+
+h1 {
+  margin: 0;
+}
+
+.project{
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+    grid-template-rows: 50px 340px;
+    align-items: center;
+    justify-content: center;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    margin-bottom: 40px;
+    background-color: rgb(226, 245, 226);
+  }
+
+/* .project-title {
+  padding: .25em 0;
+  color: #0a5607;
+  text-align:left;
+} */
+
+
+.project-image {
+  align-items:center;
+  width: 300px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+}
+
+.image-cropper {
+  margin-left: auto;
+  margin-right: auto;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.project-desc{
+  /* margin-bottom: 5px; */
+  grid-row: 1/span 2;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.project a {
+  color: #0a5607;
+  background-color: #9feaae;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.project a:hover {
+  background-color: #245e14;
+}
+
+  </style>
+  <body>
+    <header>
+      <h1>Projects</h1>
+    </header>
+    
+    <main>
+        <div class="project">
+
+          <div class="project-title">
+           <a href="#">Project 1</a>
+          </div>
+
+          <div class="image-cropper">
+            <img src="/img/IMG_1960.jpeg" alt = "project 1" class="project-image">
+          </div>
+    
+          <div class="project-desc">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu libero sed tellus tincidunt aliquet. Phasellus pellentesque viverra enim, sed consequat arcu posuere at.</p>
+          </div>
+        </div>
+
+      
+          <div class="project">
+
+            <div class="project-title">
+             <a href="#">Project 1</a>
+            </div>
+  
+            <div class="image-cropper">
+              <img src="/img/IMG_1960.jpeg" alt = "project 1" class="project-image">
+            </div>
+      
+            <div class="project-desc">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu libero sed tellus tincidunt aliquet. Phasellus pellentesque viverra enim, sed consequat arcu posuere at.</p>
+            </div>
+        </div>
+      
+        <div class="project">
+
+          <div class="project-title">
+           <a href="#">Project 1</a>
+          </div>
+
+          <div class="image-cropper">
+            <img src="/img/IMG_1960.jpeg" alt = "project 1" class="project-image">
+          </div>
+    
+          <div class="project-desc">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu libero sed tellus tincidunt aliquet. Phasellus pellentesque viverra enim, sed consequat arcu posuere at.</p>
+          </div>
+        </div>
+    
+  </body>
+</main>
+
+    <!--bottom nav-->
+   
+   
+      <!--script section-->
+      <%- include ('partials/bottom_nav.ejs') %>
+      <%- include ('partials/footer.ejs') %>
+   
