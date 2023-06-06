@@ -41,15 +41,15 @@
     }
     
     .project {
-      flex-basis: 0 0 calc(33.33% - 20px);
+      flex-basis: calc(33.33% - 20px);
       display: flex;
       flex-direction: column;
       align-items: center;
       margin: 10px;
-      max-width: 300px;
       border: 1px solid #ccc;
       border-radius: 5px;
-      padding: 20px;
+      padding: 10px;
+      text-align: center;
     }
   
     .project-title {
@@ -57,8 +57,8 @@
     }
   
     .project-title a {
-      color: #13790f;
-      background-color: #8bee61;
+      color: #0b2905;
+      background-color: #26cf2f;
       padding: 5px 10px;
       text-decoration: none;
       border-radius: 5%;
@@ -79,6 +79,9 @@
       border-radius: 50%;
       overflow: hidden;
       margin-bottom: 10px;
+      display: flex; /* Add this line to enable flexbox */
+      justify-content: center; /* Add this line to center the image horizontally */
+      align-items: center; /* Add this line to center the image vertically */
     }
   
     .project-image {
@@ -88,15 +91,15 @@
       border-radius: 50%; /* Add this line to make the image circular */
     }
   
-    @media (max-width: 768px) {
+    @media (max-width: 1200px) {
       .project {
-        flex-basis: 50%;
+        flex-basis: calc(50% - 20px); /* Adjust the flex-basis value as per your requirement */
       }
     }
-  
+
     @media (max-width: 576px) {
       .project {
-        flex-basis: 100%;
+        flex-basis: 100%; /* Change the flex-basis to occupy 100% of the container */
       }
     }
 </style>
@@ -121,7 +124,7 @@
       
           <div class="project">
             <div class="project-title"><a href="#">Project 2</a></div>
-              <div class="image-cropper"><img src="/img/IMG_1960.jpeg" alt = "project 1" class="project-image"></div>
+              <div class="image-cropper"><img src="/img/IMG_1961.jpeg" alt = "project 1" class="project-image"></div>
               <div class="project-desc">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu libero sed tellus tincidunt aliquet. Phasellus pellentesque viverra enim, sed consequat arcu posuere at.</p>
               </div>
@@ -130,7 +133,7 @@
       
           <div class="project">
               <div class="project-title"><a href="#">Project 3</a></div>
-                <div class="image-cropper"><img src="/img/IMG_1960.jpeg" alt = "project 1" class="project-image"></div>
+                <div class="image-cropper"><img src="/img/IMG_2640.jpeg" alt = "project 1" class="project-image"></div>
                 <div class="project-desc">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu libero sed tellus tincidunt aliquet. Phasellus pellentesque viverra enim, sed consequat arcu posuere at.</p>
                 </div>
