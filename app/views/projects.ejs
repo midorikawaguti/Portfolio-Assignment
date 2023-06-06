@@ -34,8 +34,14 @@
       justify-content: center;
     }
   
+    .row {
+    display: flex;
+    flex-wrap: wrap; /* Change flex-wrap property to wrap */
+    width: 100%;
+    }
+    
     .project {
-      flex: 0 0 calc(33.33% - 20px);
+      flex-basis: 0 0 calc(33.33% - 20px);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -51,8 +57,8 @@
     }
   
     .project-title a {
-      color: #0a5607;
-      background-color: #9feaae;
+      color: #13790f;
+      background-color: #8bee61;
       padding: 5px 10px;
       text-decoration: none;
       border-radius: 5%;
@@ -64,6 +70,9 @@
       color: #e1e6e1;
     }
   
+    p {
+     text-align: justify;
+    }
     .image-cropper {
       width: 150px;
       height: 150px;
@@ -76,6 +85,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      border-radius: 50%; /* Add this line to make the image circular */
     }
   
     @media (max-width: 768px) {
@@ -98,50 +108,34 @@
     
     <main>
       <div class="table">
-        <div class="project">
-
-          <div class="project-title">
-           <a href="#">Project 1</a>
+        <div class="row">
+          
+          <div class="project">
+            <div class="project-title"><a href="#">Project 1</a></div>
+              <div class="image-cropper"><img src="/img/IMG_1960.jpeg" alt = "project 1" class="project-image"></div>
+              <div class="project-desc">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu libero sed tellus tincidunt aliquet. Phasellus pellentesque viverra enim, sed consequat arcu posuere at.</p>
+              </div>
           </div>
 
-          <div class="image-cropper">
-            <img src="/img/IMG_1960.jpeg" alt = "project 1" class="project-image">
+      
+          <div class="project">
+            <div class="project-title"><a href="#">Project 2</a></div>
+              <div class="image-cropper"><img src="/img/IMG_1960.jpeg" alt = "project 1" class="project-image"></div>
+              <div class="project-desc">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu libero sed tellus tincidunt aliquet. Phasellus pellentesque viverra enim, sed consequat arcu posuere at.</p>
+              </div>
           </div>
+
+      
+          <div class="project">
+              <div class="project-title"><a href="#">Project 3</a></div>
+                <div class="image-cropper"><img src="/img/IMG_1960.jpeg" alt = "project 1" class="project-image"></div>
+                <div class="project-desc">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu libero sed tellus tincidunt aliquet. Phasellus pellentesque viverra enim, sed consequat arcu posuere at.</p>
+                </div>
+            </div>
     
-          <div class="project-desc">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu libero sed tellus tincidunt aliquet. Phasellus pellentesque viverra enim, sed consequat arcu posuere at.</p>
-          </div>
-        </div>
-
-      
-        <div class="project">
-
-            <div class="project-title">
-             <a href="#">Project 2</a>
-            </div>
-  
-            <div class="image-cropper">
-              <img src="/img/IMG_2640.jpeg" alt = "project 1" class="project-image">
-            </div>
-      
-            <div class="project-desc">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu libero sed tellus tincidunt aliquet. Phasellus pellentesque viverra enim, sed consequat arcu posuere at.</p>
-            </div>
-        </div>
-      
-        <div class="project">
-
-          <div class="project-title">
-           <a href="#">Project 3</a>
-          </div>
-
-          <div class="image-cropper">
-            <img src="/img/IMG_1961.jpeg" alt = "project 1" class="project-image">
-          </div>
-    
-          <div class="project-desc">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu libero sed tellus tincidunt aliquet. Phasellus pellentesque viverra enim, sed consequat arcu posuere at.</p>
-          </div>
         </div>
       </div>
   </body>
